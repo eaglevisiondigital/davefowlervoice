@@ -30,3 +30,40 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 @media(max-width:900px){.brand{width:310px}.hero{padding-top:62px}.signature-overlay{width:65%;left:2%;bottom:-1%}.market-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.brand{width:245px}.quality-grid,.market-grid{grid-template-columns:1fr}.quality-card{min-height:190px}.hero:before{opacity:.08}.signature-overlay{width:74%;left:1%;bottom:0}.footer-watermark{width:340px;height:340px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Editorial services showcase */
+.services-showcase{position:relative;overflow:hidden}
+.services-showcase:before{content:"";position:absolute;inset:4% -15% auto;height:520px;background:radial-gradient(ellipse at center,rgba(217,168,62,.07),transparent 62%);pointer-events:none}
+.services-showcase .section-head{max-width:850px;margin-bottom:58px}
+.services-showcase .section-head p{font-size:1.08rem;max-width:760px}
+.service-story{position:relative;display:grid;grid-template-columns:1.03fr .97fr;min-height:560px;margin:0 0 34px;border:1px solid rgba(255,255,255,.08);border-radius:32px;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,.038),rgba(255,255,255,.012));box-shadow:0 28px 80px rgba(0,0,0,.28)}
+.service-story:nth-of-type(3){grid-template-columns:.94fr 1.06fr}
+.service-story-copy{padding:68px 62px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.service-number{font-size:.73rem;letter-spacing:.2em;font-weight:900;color:var(--gold2);margin-bottom:22px}
+.service-story h3{font-size:clamp(2.8rem,5vw,5.2rem);line-height:.98;letter-spacing:-.035em;margin:0 0 24px}
+.service-story h3 em{font-style:normal;color:var(--gold)}
+.service-story-copy>p{font-size:1.08rem;line-height:1.78;max-width:620px;margin:0 0 25px}
+.service-tags{display:flex;gap:9px;flex-wrap:wrap;list-style:none;margin:0 0 8px;padding:0}
+.service-tags li{border:1px solid rgba(217,168,62,.3);background:rgba(217,168,62,.055);color:#ded5c4;border-radius:999px;padding:8px 13px;font-size:.76rem;letter-spacing:.04em}
+.service-story-art{position:relative;min-height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;border-left:1px solid rgba(255,255,255,.06)}
+.service-story-faith .service-story-art{border-left:0;border-right:1px solid rgba(255,255,255,.06)}
+.service-mic-art{background:radial-gradient(circle at 50% 48%,rgba(217,168,62,.18),transparent 48%),linear-gradient(145deg,#11100d,#050505 62%)}
+.service-mic-art:before{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(217,168,62,.18);border-radius:50%;box-shadow:0 0 90px rgba(217,168,62,.07),inset 0 0 70px rgba(217,168,62,.04)}
+.service-mic-art img{position:relative;width:min(77%,470px);filter:drop-shadow(0 28px 44px rgba(0,0,0,.65));z-index:2}
+.service-mic-art>span{position:absolute;bottom:34px;letter-spacing:.28em;font-size:.66rem;color:rgba(242,209,126,.7)}
+.service-wave{position:absolute;left:0;right:0;height:90px;background:repeating-linear-gradient(90deg,transparent 0 6px,rgba(217,168,62,.66) 7px 9px,transparent 10px 17px);mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 75%,transparent);opacity:.32;animation:waveDrift 20s linear infinite}
+.service-icon-art{background:radial-gradient(circle at 50% 50%,rgba(217,168,62,.17),transparent 41%),linear-gradient(145deg,#080808,#110d07)}
+.service-icon-art img{width:min(59%,370px);position:relative;z-index:3;filter:drop-shadow(0 28px 42px rgba(0,0,0,.62))}
+.orbit{position:absolute;border:1px solid rgba(217,168,62,.18);border-radius:50%}.orbit-one{width:430px;height:430px;animation:slowSpin 25s linear infinite}.orbit-two{width:530px;height:530px;border-style:dashed;opacity:.55;animation:slowSpin 38s linear reverse infinite}
+.faith-words{position:absolute;inset:auto 26px 32px;display:flex;justify-content:space-between;text-transform:uppercase;letter-spacing:.15em;color:rgba(242,209,126,.72);font-size:.65rem}
+.service-signature-art{flex-direction:column;background:linear-gradient(155deg,#12100b,#050505 65%);padding:48px}
+.service-signature-art:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(217,168,62,.12),transparent 64%)}
+.service-signature-art img{position:relative;width:min(90%,610px);z-index:2;mix-blend-mode:screen;filter:drop-shadow(0 18px 35px rgba(0,0,0,.65))}
+.service-signature-art blockquote{position:relative;z-index:2;margin:30px auto 0;max-width:520px;text-align:center;font-family:Georgia,serif;font-size:1.18rem;color:#d8d1c5;line-height:1.6}
+.services-more{margin-top:62px;padding:42px 45px;border-top:1px solid rgba(217,168,62,.28);border-bottom:1px solid rgba(217,168,62,.18);display:grid;grid-template-columns:.72fr 1.28fr;gap:50px;align-items:center;background:linear-gradient(90deg,rgba(217,168,62,.045),transparent)}
+.services-more h3{font-size:clamp(1.8rem,3vw,3rem);line-height:1.06;margin:8px 0 0}
+.services-more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.services-more-grid span{padding:14px 15px;border:1px solid rgba(255,255,255,.075);border-radius:12px;color:#d4cec3;background:rgba(255,255,255,.018);font-size:.84rem;transition:.25s}
+.services-more-grid span:hover{border-color:rgba(217,168,62,.42);color:var(--gold2);transform:translateY(-2px)}
+@media(max-width:900px){.service-story,.service-story:nth-of-type(3){grid-template-columns:1fr}.service-story-art{min-height:440px;border-left:0;border-top:1px solid rgba(255,255,255,.06)}.service-story-faith .service-story-art{order:2;border-right:0;border-top:1px solid rgba(255,255,255,.06)}.service-story-faith .service-story-copy{order:1}.services-more{grid-template-columns:1fr}.services-more-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.service-story{min-height:0;border-radius:24px}.service-story-copy{padding:43px 27px}.service-story-art{min-height:330px}.service-story h3{font-size:2.75rem}.service-mic-art:before{width:290px;height:290px}.orbit-one{width:280px;height:280px}.orbit-two{width:350px;height:350px}.service-signature-art{padding:30px 20px}.service-signature-art blockquote{font-size:1rem}.services-more{padding:34px 20px;margin-top:42px}.services-more-grid{grid-template-columns:1fr}.faith-words{font-size:.56rem}}
