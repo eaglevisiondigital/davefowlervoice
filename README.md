@@ -49,3 +49,9 @@ V17 mobile homepage update:
 - Added complete DC Shield favicon and Apple/Android icon package.
 - Added root favicon.ico and web manifest.
 - Updated every HTML page to reference the new favicon assets.
+
+## V22 homepage trust-first update
+- Added a clear trust/value section above the approved hero.
+- Added Parents & Grandparents messaging and two primary actions.
+- Preserved the approved desktop/mobile hero, book preview, buttons, favicon package, and all existing functionality.
+- Reframed the later family section to avoid repeating the same headline.
