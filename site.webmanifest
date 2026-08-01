@@ -1,19 +1,21 @@
 {
-  "name": "Dustin Courageous",
-  "short_name": "Dustin Courageous",
+  "name": "Dave Fowler Signature Voice",
+  "short_name": "Dave Fowler Voice",
+  "description": "Professional voiceover talent for commercial, corporate, ministry, documentary, training and storytelling projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
   "icons": [
     {
-      "src": "/favicon-192x192.png",
+      "src": "/assets/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon-512x512.png",
+      "src": "/assets/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#050505",
-  "background_color": "#050505",
-  "display": "standalone"
+  ]
 }
